@@ -1,0 +1,41 @@
+/* AI assisted alternative design. Original HTML: csszengarden.com/examples/index */
+/* CSS licence: CC BY-NC-SA 3.0. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #eeeaff; color: #25203d; font: 17px/1.8 Arial, sans-serif; }
+a { color: #5833ad; text-underline-offset: 4px; }
+a:hover { color: #a72a57; }
+a:focus-visible { outline: 3px solid #e78c19; outline-offset: 4px; }
+.page-wrapper { max-width: 1180px; margin: auto; padding: 36px; }
+header { padding: 60px 36px; background: #34245f; color: white; border-radius: 24px; border-bottom: 12px solid #edab64; }
+h1 { margin: 0; font-size: 68px; line-height: 1.1; letter-spacing: -3px; }
+h2 { font-size: 17px; font-weight: normal; letter-spacing: 3px; text-transform: uppercase; }
+h3 { margin: 0 0 18px; font-size: 28px; line-height: 1.3; }
+p { margin: 0 0 20px; }
+.summary { padding: 35px 10px; max-width: 850px; font-size: 21px; }
+.preamble, .main > div { padding: 32px; background: white; border: 1px solid #d4cbe9; border-radius: 18px; margin-bottom: 24px; }
+.preamble { background: #ffe8cc; }
+.main { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.main > div { margin-bottom: 0; }
+.requirements, footer { grid-column: 1 / -1; }
+footer { padding: 8px; }
+footer a { margin-right: 24px; font-weight: bold; }
+.sidebar { margin-top: 30px; padding: 30px; background: #ddd4f3; border-radius: 18px; }
+.sidebar .wrapper { display: flex; gap: 35px; }
+.sidebar .wrapper > div { flex: 1; }
+.sidebar h3 { font-size: 22px; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li { padding: 9px 0; font-size: 14px; border-bottom: 1px solid #c4b8df; }
+.design-name { display: block; font-size: 17px; font-weight: bold; }
+@media (max-width: 760px) {
+ .main { display: block; }
+ .main > div { margin-bottom: 24px; }
+ .sidebar .wrapper { display: block; }
+ h1 { font-size: 48px; }
+}
+@media (max-width: 500px) {
+ .page-wrapper { padding: 18px; }
+ header, .preamble, .main > div, .sidebar { padding: 24px; }
+ h1 { font-size: 40px; letter-spacing: -2px; }
+ h2 { font-size: 13px; }
+ h3 { font-size: 24px; }
+}

@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f2f0fa; color: #262039; font-family: Arial, sans-serif; line-height: 1.6; }
+main { max-width: 560px; margin: 8vh auto; padding: 32px; background: white; border-radius: 20px; box-shadow: 0 12px 40px #29203b12; }
+h1 { line-height: 1.15; }
+label { display: block; font-weight: bold; margin-top: 18px; }
+input, textarea { width: 100%; padding: 12px; border: 2px solid #918b9e; border-radius: 8px; font: inherit; }
+textarea { min-height: 130px; resize: vertical; }
+button { padding: 12px 22px; margin-top: 20px; border: 0; border-radius: 8px; background: #6035c5; color: white; font: inherit; font-weight: bold; cursor: pointer; }
+button:hover { background: #472597; }
+button:disabled { opacity: .6; cursor: wait; }
+:focus-visible { outline: 3px solid #e79d1d; outline-offset: 4px; }
+#message { min-height: 26px; margin-top: 12px; }
+@media (max-width: 600px) { main { margin: 20px; padding: 24px; } }
